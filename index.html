@@ -19,10 +19,12 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/vendor.css">
 
+
     <!-- script
     ================================================== -->
     <script src="js/modernizr.js"></script>
     <script defer src="js/fontawesome/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- favicons
     ================================================== -->
@@ -162,43 +164,180 @@
 
             <div class="column large-6 w-900-stack s-about__intro-text">
                 <h1 class="display-1" data-aos="fade-up">
-                    Estrutura para praça de alimentação
+                    Praça de alimentação
                 </h1>
 
                 <p class="lead" data-aos="fade-up">
-                    Estrutura TS para montagem do ponto de atendimento Espaço montado em estrutura de alumínio, com
-                    placas de TS revestidas em fórmica, medindo 4x4x2,75 metros. Conta com balcão de atendimento, parede
-                    divisória com porta, bancada de apoio para a copa, piso tablado revestido com carpete, iluminação e
-                    ponto de tomada. Dispõe de uma porta de entrada posicionada na parte traseira.
+                    <strong style="color: #9ECECA;">Estrutura: </strong>Espaço em alumínio com placas TS revestidas em
+                    fórmica, medindo
+                    4x4x2,75m. Inclui balcão de atendimento, parede divisória com porta, bancada de copa, piso tablado
+                    com carpete, iluminação e tomada. A entrada está localizada na parte traseira.
                 </p>
+
             </div>
 
             <div class="column large-6 w-900-stack s-about__photo-block">
                 <div class="s-about__photo" data-aos="fade-up"></div>
             </div>
+            <div class="column large-12 w-900-stack s-about__intro-text">
+                <!-- <p class="lead" data-aos="fade-up">
+                    <strong style="color: #9ECECA;" data-bs-target="#collapseMenu" aria-expanded="false"
+                        aria-controls="collapseMenu">Cardápio: </strong>
+                </p> -->
+                <div class="accordion" id="menuAccordion">
+                    <div class="accordion-item">
+                        <div class="d-flex justify-content-center align-items-center vh-100">
+                            <h2 class="accordion-header" id="headingMenu">
+                                <button type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenu"
+                                    aria-expanded="false" aria-controls="collapseMenu">
+                                    Visualizar Cardápio
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseMenu" class="accordion-collapse collapse" aria-labelledby="headingMenu"
+                            data-bs-parent="#menuAccordion">
+                            <div class="accordion-body">
+
+                                <table class="table table-striped table-bordered">
+                                    <thead class="table-dark">
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Item</th>
+                                            <th>Descrição</th>
+                                            <th>Preço (R$)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Cheeseburger</td>
+                                            <td>Pão brioche, hambúrguer, queijo e molho especial. (6 unidades)</td>
+                                            <td>20,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Batata Frita</td>
+                                            <td>Porção de batatas fritas crocantes, com molho rosê </td>
+                                            <td>12,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Hot Dog</td>
+                                            <td>Pão, salsicha, ketchup, mostarda e batata palha.</td>
+                                            <td>15,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Pizza Slice</td>
+                                            <td>Fatias de pizza de queijo ou calabresa.</td>
+                                            <td>10,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Nuggets</td>
+                                            <td>Porção de nuggets de frango (6 unidades).</td>
+                                            <td>18,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>Coxinha</td>
+                                            <td>Clássica coxinha de frango com catupiry.</td>
+                                            <td>8,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>Espetinho de Frango</td>
+                                            <td>Espetinho grelhado com tempero especial.</td>
+                                            <td>14,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>Milkshake</td>
+                                            <td>Sabores de chocolate, morango ou baunilha.</td>
+                                            <td>15,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Açaí</td>
+                                            <td>Taça de açaí com granola e banana.</td>
+                                            <td>18,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>Pastel</td>
+                                            <td>Opções de queijo, carne ou frango.</td>
+                                            <td>7,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>Sanduíche Natural</td>
+                                            <td>Pão integral com peito de peru, alface e cenoura.</td>
+                                            <td>12,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>Salgados Assados</td>
+                                            <td>Esfiha de carne, frango ou queijo.</td>
+                                            <td>10,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>13</td>
+                                            <td>Mini Pizza</td>
+                                            <td>Versão mini de pizzas clássicas.</td>
+                                            <td>15,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>14</td>
+                                            <td>Refrigerante</td>
+                                            <td>Latinha ou copo de 300ml.</td>
+                                            <td>6,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>15</td>
+                                            <td>Água</td>
+                                            <td>Garrafa de 500ml.</td>
+                                            <td>5,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>16</td>
+                                            <td>Suco Natural</td>
+                                            <td>Sabores variados: laranja, abacaxi, maracujá.</td>
+                                            <td>10,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17</td>
+                                            <td>Bolo de Rolo</td>
+                                            <td>Fatias do tradicional bolo de Pernambuco.</td>
+                                            <td>12,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>18</td>
+                                            <td>Churros</td>
+                                            <td>Recheio de doce de leite ou chocolate.</td>
+                                            <td>10,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>19</td>
+                                            <td>Crepe</td>
+                                            <td>Sabores doces ou salgados.</td>
+                                            <td>14,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>20</td>
+                                            <td>Pipoca Gourmet</td>
+                                            <td>Sabores de chocolate ou leite ninho.</td>
+                                            <td>8,00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="row block-large-1-2 block-tab-full s-about__process item-list">
-            <div class="column item item-process" data-aos="fade-up">
-                <h3 class="item-title">Define</h3>
-                <p>
-                    Deserunt rerum perspiciatis quaerat quam numquam assumenda neque.
-                    Quis dolores totam voluptatibus molestiae non. Quae exercitationem
-                    cum numquam repudiandae. Beatae eum quae. Ut ex unde rem quod
-                    ipsum consequatur. blanditiis temporibus pariatur voluptatibus molestiae.
-                </p>
-            </div>
-            <div class="column item item-process" data-aos="fade-up">
-                <h3 class="item-title">Design</h3>
-                <p>
-                    Deserunt rerum perspiciatis quaerat quam numquam assumenda neque.
-                    Quis dolores totam voluptatibus molestiae non. Quae exercitationem
-                    cum numquam repudiandae. Beatae eum quae. Ut ex unde rem quod
-                    ipsum consequatur. blanditiis temporibus pariatur voluptatibus molestiae.
-                </p>
-            </div>
 
-        </div>
 
     </section> <!-- end s-about -->
 
@@ -234,7 +373,7 @@
 
             </div>
 
-            <div class="column large-8 w-900-stack s-about__intro-text">
+            <div class="column large-12 w-900-stack s-about__intro-text">
                 <h4 class="display-3" data-aos="fade-up">
                     Produtos
                 </h4>
@@ -355,7 +494,7 @@
 
     </section> <!-- end s-services -->
 
-    <section id="portfolio" class="s-portfolio">
+    <section id="portfolio" class="s-portfolio" style="padding-bottom: 100px;">
 
         <div class="row s-porfolio__top">
             <div class="column large-6 w-900-stack">
@@ -371,7 +510,7 @@
             </div>
         </div> <!-- end s-portfolio__top-->
 
-        <div class="row s-portfolio__list block-large-1-2 block-tab-full collapse">
+        <div class="row s-portfolio__list block-large-1-2 block-tab-full collapse" style="display: none;">
 
             <div class="column" data-aos="fade-up">
                 <div class="folio-item">
@@ -506,118 +645,6 @@
         </div> <!-- folio-list -->
 
     </section> <!-- end s-portfolio -->
-
-
-    <!-- clients
-    ================================================== -->
-    <div id="clients" class="section s-clients">
-
-        <div class="row narrower s-clients__top h-text-center">
-            <div class="column">
-                <h1 class="display-1" data-aos="fade-up">
-                    We've had the priveledge with working with
-                    some of the largest and most iconic brands
-                </h1>
-            </div>
-        </div> <!-- s-clients__top -->
-
-        <div class="row clients-outer">
-            <div class="column">
-                <div class="clients" data-aos="fade-up">
-
-                    <a href="#0" title="" class="clients__slide"><img src="images/icons/clients/dropbox.svg" /></a>
-                    <a href="#0" title="" class="clients__slide"><img src="images/icons/clients/atom.svg" /></a>
-                    <a href="#0" title="" class="clients__slide"><img src="images/icons/clients/github.svg" /></a>
-                    <a href="#0" title="" class="clients__slide"><img src="images/icons/clients/redhat.svg" /></a>
-                    <a href="#0" title="" class="clients__slide"><img src="images/icons/clients/medium.svg" /></a>
-                    <a href="#0" title="" class="clients__slide"><img src="images/icons/clients/messenger.svg" /></a>
-                    <a href="#0" title="" class="clients__slide"><img src="images/icons/clients/steam.svg" /></a>
-                    <a href="#0" title="" class="clients__slide"><img src="images/icons/clients/spotify.svg" /></a>
-
-                </div> <!-- end clients -->
-            </div> <!-- end column -->
-        </div> <!-- end clients-outer -->
-
-        <div class="row testimonials collapse">
-
-            <div class="column large-12">
-
-                <div class="testimonial-slider" data-aos="fade-up">
-
-                    <div class="testimonial-slider__slide">
-                        <p>
-                            Molestiae incidunt consequatur quis ipsa autem nam sit enim magni. Voluptas tempore rem.
-                            Explicabo a quaerat sint autem dolore ducimus ut consequatur neque. Nisi dolores quaerat
-                            fuga rem nihil nostrum.
-                            Laudantium quia consequatur molestias delectus culpa.
-                        </p>
-                        <div class="testimonial-slider__author">
-                            <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonial-slider__avatar">
-                            <cite class="testimonial-slider__cite">
-                                <strong>Tim Cook</strong>
-                                <span>CEO, Apple</span>
-                            </cite>
-                        </div>
-                    </div> <!-- end testimonials__slide -->
-
-                    <div class="testimonial-slider__slide">
-                        <p>
-                            Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas
-                            animi adipisci.
-                            Nisi eaque consequatur. Voluptatem dignissimos ut ducimus accusantium perspiciatis.
-                            Quasi voluptas eius distinctio. Atque eos maxime.
-                        </p>
-                        <div class="testimonial-slider__author">
-                            <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonial-slider__avatar">
-                            <cite class="testimonial-slider__cite">
-                                <strong>Sundar Pichai</strong>
-                                <span>CEO, Google</span>
-                            </cite>
-                        </div>
-                    </div> <!-- end testimonials__slide -->
-
-                    <div class="testimonial-slider__slide">
-                        <p>
-                            Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia
-                            nesciunt. Ducimus aut sed ipsam.
-                            Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius
-                            distinctio.
-                            Voluptatem dignissimos ut.
-                        </p>
-                        <div class="testimonial-slider__author">
-                            <img src="images/avatars/user-04.jpg" alt="Author image" class="testimonial-slider__avatar">
-                            <cite class="testimonial-slider__cite">
-                                <strong>Satya Nadella</strong>
-                                <span>CEO, Microsoft</span>
-                            </cite>
-                        </div>
-                    </div> <!-- end testimonials__slide -->
-
-                    <div class="testimonial-slider__slide">
-                        <p>
-                            Nunc interdum lacus sit amet orci. Vestibulum dapibus nunc ac augue. Fusce vel dui. In ac
-                            felis
-                            quis tortor malesuada pretium. Curabitur vestibulum aliquam leo. Qui sed at corrupti
-                            expedita voluptas odit.
-                            Nihil ea quia nesciunt. Ducimus aut sed ipsam.
-                        </p>
-                        <div class="testimonial-slider__author">
-                            <img src="images/avatars/user-05.jpg" alt="Author image" class="testimonial-slider__avatar">
-                            <cite class="testimonial-slider__cite">
-                                <strong>Jeff Bezos</strong>
-                                <span>CEO, Amazon</span>
-                            </cite>
-                        </div>
-                    </div> <!-- end testimonials__slide -->
-
-                </div> <!-- end testimonial slider -->
-
-            </div> <!-- end column -->
-
-        </div> <!-- end row -->
-
-
-    </div> <!-- end s-clients -->
 
 
     <!-- contact
